@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>872</width>
+    <height>673</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MER_EX</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>283</x>
+      <y>35</y>
+      <width>581</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gl_output">
+     <item row="2" column="0">
+      <widget class="QListView" name="lv_nn">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(49, 205, 229);
+alternate-background-color: rgb(49, 205, 229);
+selection-background-color: rgb(49, 205, 229);
+border-color: rgb(49, 205, 229);</string>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::EditKeyPressed</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QListView" name="lv_pn">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(28, 255, 66);
+alternate-background-color: rgb(28, 255, 66);
+selection-background-color:rgb(28, 255, 66);
+border-color: rgb(28, 255, 66);</string>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::EditKeyPressed</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QListView" name="lv_pp">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(251, 255, 7);
+alternate-background-color: rgb(251, 255, 7);
+selection-background-color: rgb(251, 255, 7);
+background-color: rgb(251, 255, 7);</string>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::EditKeyPressed</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QListView" name="lv_np">
+       <property name="whatsThis">
+        <string>Hi%</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 0, 4,255);
+alternate-background-color: rgb(255, 0, 4,255);
+selection-background-color: rgb(255, 0, 4,255);
+border-color: rgb(255, 0, 4,255);
+</string>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::EditKeyPressed</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pb_import">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>0</y>
+      <width>273</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>+ Import Music Files | 导入音乐</string>
+    </property>
+   </widget>
+   <widget class="QListView" name="lv_import">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>25</y>
+      <width>271</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="autoScroll">
+     <bool>false</bool>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::EditKeyPressed</set>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>570</y>
+      <width>851</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;使用说明：[导入音乐]后双击音乐条目或按[播放]试听音乐，按[预测]识别音乐情感。&lt;a href=&quot;mailto:ibmmc@live.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;ibmmc@live.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>283</x>
+      <y>1</y>
+      <width>577</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QCommandLinkButton" name="pb_predict">
+       <property name="text">
+        <string>Predict Selected Song | 预测选中音乐</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Maximum</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QCommandLinkButton" name="pb_playback">
+       <property name="text">
+        <string>Play/Stop Selected Song 播放/停止选中音乐</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pb_output">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>580</y>
+      <width>101</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Output all .mf&lt;&lt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>872</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

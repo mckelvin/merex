@@ -25,9 +25,9 @@
 
 ccmake 推荐配置
 
-![ccmake 推荐配置P1](./raw/master/misc/marsyas_build_p1.png)
+![ccmake 推荐配置P1](./merex/raw/master/misc/marsyas_build_p1.png)
 
-![ccmake 推荐配置P2](./raw/master/misc/marsyas_build_p2.png)
+![ccmake 推荐配置P2](./merex/raw/master/misc/marsyas_build_p2.png)
 
 
     $ make #若出错则按提示安装相应依赖库

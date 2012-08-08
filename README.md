@@ -53,8 +53,11 @@ MER_EX依赖训练文件mc_train.arff，需保持其目录结构:
 
 # 其他
 
-
+Dataflow
 ![Dataflow Diagram](./merex/raw/master/misc/dataflow.png)
+
+MEREX
+![MEREX Screenshot](./merex/raw/master/misc/mer_ex_screenshot.png)
 
 [Thayer's Model of Mood](https://www.google.com/search?q=Thayer's%20Model%20of%20Mood )
 

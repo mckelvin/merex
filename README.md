@@ -1,6 +1,6 @@
-﻿
+# MEREX
 
-# 安装marsyas
+## 安装marsyas
 
 *如果仅仅是运行二进制文件`MER_EX`，只需执行如下命令跳过本节内容。*
 
@@ -25,9 +25,9 @@
 
 ccmake 推荐配置
 
-![ccmake 推荐配置P1](./merex/raw/master/misc/marsyas_build_p1.png)
+![ccmake 推荐配置P1](https://raw.githubusercontent.com/mckelvin/merex/master/misc/marsyas_build_p1.png)
 
-![ccmake 推荐配置P2](./merex/raw/master/misc/marsyas_build_p2.png)
+![ccmake 推荐配置P2](https://raw.githubusercontent.com/mckelvin/merex/master/misc/marsyas_build_p2.png)
 
 
     $ make #若出错则按提示安装相应依赖库
@@ -54,11 +54,11 @@ MER_EX依赖训练文件mc_train.arff，需保持其目录结构:
 # 其他
 
 Dataflow
-![Dataflow Diagram](./merex/raw/master/misc/dataflow.png)
+![Dataflow Diagram](https://raw.githubusercontent.com/mckelvin/merex/master/misc/dataflow.png)
 
 MEREX
-![MEREX Screenshot](./merex/raw/master/misc/mer_ex_screenshot.png)
+![MEREX Screenshot](https://raw.githubusercontent.com/mckelvin/merex/master/misc/mer_ex_screenshot.png)
 
 [Thayer's Model of Mood](https://www.google.com/search?q=Thayer's%20Model%20of%20Mood )
 
-*说明文档完善中.  .  .  .  .  .最后更新 06/09/2012*
+*最后更新 10/21/2015*
